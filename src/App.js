@@ -1,13 +1,18 @@
-import Footer from "shared/components/Footer/Footer";
-import Header from "shared/components/Header/Header";
-import "./App.css";
+import Footer from "shared/components/footer/Footer";
+import Header from "shared/components/header/Header";
+import HomePage from "pages/home-page/Home.page";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Header />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        {/* <Route {...}/> */}
+      </Routes>
       <Footer />
-    </div>
+    </>
   );
 }
 
