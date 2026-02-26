@@ -6,25 +6,34 @@ function ArtworkCard({
     year,
     medium,
     imgSrc,
-    imgAlt = title,
-    slug
+    imgAlt = "Artwork",
+    slug,
+    variant = "detailed" // "detailed" will be for Featured, "thumbnail" will be for PortfolioPage grid
 }) {
-    if (!title || !slug) return null;
+    if (!slug || !imgSrc) return null;
 
     return(
         <article className={styles.ArtworkCard}>
-            <Link to={`/artwork/${slug}`}>
-                {imgSrc && <img src={imgSrc} alt={imgAlt} />}
-                <header className={styles.ArtworkCardHeader}>
-                    <h3 className={styles.ArtworkCardTitle}>{title}</h3>
-                </header>
-                 <div className={styles.ArtworkCardMeta}>
-                    {year && <p>{year}</p>}
-                    {medium && <p>{medium}</p>}
-                </div>
+            <Link to={`/artwork/${slug}`} className={styles.ArtworkCardLink}>
+                <img src={imgSrc} alt={imgAlt} />
+
+                {variant === "detailed" && (
+                    <>
+                        {title && (
+                            <header className={styles.ArtworkCardHeader}>
+                                <h3 className={styles.ArtworkCardTitle}>{title}</h3>
+                            </header>
+                        )}
+
+                        <div className={styles.ArtworkCardMeta}>
+                            {year && <p>{year}</p>}
+                            {medium && <p>{medium}</p>}
+                        </div>
+                    </>
+                )}
             </Link>
         </article>
     );
 }
 
-export default ArtworkCard;
+export default ArtworkCard; 

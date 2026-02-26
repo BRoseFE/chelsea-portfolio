@@ -1,7 +1,13 @@
+import FeaturedWorks from "./components/featured-works/FeaturedWorks";
+import Hero from "./components/hero/Hero";
+import About from "./components/about/About";
+
 function HomePage() {
     return(
         <main>
-            null
+            <Hero />
+            <FeaturedWorks />
+            <About />
         </main>
     );
 }
