@@ -1,0 +1,31 @@
+.button {
+    border-radius: 32px;
+    background-color: #551155;
+    color: #333333;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.6rem 1.1rem;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 14rem;
+    width: fit-content
+}
+
+.button:focus-visible {
+    outline: 2px solid #495E57;
+    outline-offset: 3px;
+}
+
+.button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.button:hover,
+.button:focus-visible {
+    background-color: #333333;
+    color: #EDEFEE;
+}
