@@ -1,8 +1,8 @@
-import GridLAyoutSection from "./components/grid-layout-section/GridLAyoutSection";
+import GridLayoutSection from "./components/grid-layout-section/GridLayoutSection";
 
 function PortfolioPage() {
     return(
-        <GridLAyoutSection />
+        <GridLayoutSection />
     );
 }
 
