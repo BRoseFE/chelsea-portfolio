@@ -37,8 +37,8 @@ export const artworks = [
     },
 
     {
-        id: "sunflower",
-        title: "sunflower",
+        id: "sunflowers",
+        title: "sunflowers",
         year: 2026,
         medium: "Stock Image",
         imgSrc: "/artwork/sunflowers.jpg",
