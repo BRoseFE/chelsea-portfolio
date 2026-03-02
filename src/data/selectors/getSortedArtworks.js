@@ -1,4 +1,4 @@
-import { artworks } from "data/artworks"
+import { artworks } from "data/artworks";
 
 export function getSortedArtworks() {
     return [...artworks].sort((a, b) => {
