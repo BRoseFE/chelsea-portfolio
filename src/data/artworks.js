@@ -91,5 +91,104 @@ export const artworks = [
         tags: ["colour", "eye", "coloured-pencil"],
         slug: "eye-into-the-soul",
     },
+
+    {
+        id: "from-coal-to-crimson",
+        title: "From Coal to Crimson",
+        year: null,
+        medium: "coloured-pencil",
+        imgSrc: "/artwork/thumbnail/from-coal-to-crimson.webp",
+        imgAlt: "Drawing of cracked stone heart turning back into flesh",
+        tags: ["colour", "heart", "coloured-pencil"],
+        slug: "from-coal-to-crimson",
+    },
+
+    {
+        id: "heart-under-siege",
+        title: "Heart Under Siege",
+        year: null,
+        medium: "coloured-pencil",
+        imgSrc: "/artwork/thumbnail/heart-under-siege.webp",
+        imgAlt: "Line drawing art of woman grasping heart",
+        tags: ["colour", "woman", "sketch"],
+        slug: "heart-under-siege",
+    },
+
+    {
+        id: "held-gaze",
+        title: "Held Gaze",
+        year: null,
+        medium: "pencil-sketch",
+        imgSrc: "/artwork/thumbnail/held-gaze.webp",
+        imgAlt: "Drawing of confident young woman staring",
+        tags: ["pencil", "woman", "sketch"],
+        slug: "held-gaze",
+    },
+
+    {
+        id: "january",
+        title: "January",
+        year: null,
+        medium: "coloured-pencil",
+        imgSrc: "/artwork/thumbnail/january.webp",
+        imgAlt: "Pink Magnolia drawing",
+        tags: ["coloured-pencil", "flower"],
+        slug: "january",
+    },
+
+    {
+        id: "jeffrey-paul-raymond-brooks",
+        title: "Jeffrey Paul-Raymond Brooks",
+        year: null,
+        medium: "coloured-pencil",
+        imgSrc: "/artwork/thumbnail/jeffrey-paul-raymond-brooks.webp",
+        imgAlt: "Drawing collage of flowers, bee and humming bird",
+        tags: ["coloured-pencil", "flower", "collage"],
+        slug: "jeffrey-paul-raymond-brooks",
+    },
+
+    {
+        id: "kieran-sky-stewart",
+        title: "Kieran Sky Stewart",
+        year: null,
+        medium: "coloured-pencil",
+        imgSrc: "/artwork/thumbnail/kieran-sky-stewart.webp",
+        imgAlt: "Red rose drawing",
+        tags: ["coloured-pencil", "flower", "rose"],
+        slug: "kieran-sky-stewart"
+    },
+
+    {
+        id: "lily",
+        title: "Lily",
+        year: null,
+        medium: "coloured-pencil",
+        imgSrc: "/artwork/thumbnail/lily.webp",
+        imgAlt: "White lily drawing",
+        tags: ["coloured-pencil", "flower", "lily"],
+        slug: "lily",
+    },
+
+    {
+        id: "march",
+        title: "March",
+        year: null,
+        medium: "coloured-pencil",
+        imgSrc: "/artwork/thumbnail/march.webp",
+        imgAlt: "White Rose drawing",
+        tags: ["coloured-pencil", "flower", "rose"],
+        slug: "rose",
+    },
+
+    {
+        id: "michael",
+        title: "Michael",
+        year: null,
+        medium: "pencil-sketch",
+        imgSrc: "/artwork/thumbnail/michael.webp",
+        imgAlt: "Drawing of archangel Michael",
+        tags: ["sketch", "angel"],
+        slug: "michael",
+    },
 ]
 

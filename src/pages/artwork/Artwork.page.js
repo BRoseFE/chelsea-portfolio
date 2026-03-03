@@ -1,3 +1,5 @@
+// Need to change so when art is clicked, it opens the full-size art, not the thumbnail that's currently being rendered in the artworks data module
+
 import styles from "./Artwork.page.module.css"
 import { useParams } from "react-router-dom";
 import { artworks } from "data/artworks";

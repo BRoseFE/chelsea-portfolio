@@ -3,9 +3,9 @@
 
 export const featuredIds = [
     "eye-into-the-soul",
-    "lilly",
+    "lily",
     "kieran-sky-stewart",
-    "jeffrey-paul-raymond-brooks",
     "mirror",
-    "after-winter"
+    "after-winter",
+    "pretentious",
 ];
