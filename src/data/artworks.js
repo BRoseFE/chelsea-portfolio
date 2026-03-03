@@ -58,69 +58,121 @@ export const artworks = [
         year: 2025,
         description: "Blue eye drawn with abstract styling lines",
         slug: "eye-into-the-soul",
+        featuredRank: 1,
     },
 
     {
         title: "From Coal to Crimson",
-        year: undefined,
+        year: 2023,
         description: "Drawing of cracked stone heart turning back into flesh",
         slug: "from-coal-to-crimson",
     },
 
     {
         title: "Heart Under Siege",
-        year: undefined,
+        year: 2023,
         description: "Line drawing art of woman grasping heart",
         slug: "heart-under-siege",
     },
 
     {
         title: "Held Gaze",
-        year: undefined,
+        year: 2024,
         description: "Drawing of confident young woman staring",
         slug: "held-gaze",
     },
 
     {
         title: "January",
-        year: undefined,
+        year: 2023,
         description: "Pink Magnolia drawing",
         slug: "january",
     },
 
     {
         title: "Jeffrey Paul-Raymond Brooks",
-        year: undefined,
+        year: 2024,
         description: "Drawing collage of flowers, bee and humming bird",
         slug: "jeffrey-paul-raymond-brooks",
     },
 
     {
         title: "Kieran Sky Stewart",
-        year: undefined,
+        year: 2021,
         description: "Red rose drawing",
         slug: "kieran-sky-stewart"
     },
 
     {
         title: "Lily",
-        year: undefined,
+        year: 2021,
         description: "White lily drawing",
         slug: "lily",
     },
 
     {
         title: "March",
-        year: undefined,
+        year: 2024,
         description: "White Rose drawing",
-        slug: "rose",
+        slug: "march",
     },
 
     {
         title: "Michael",
-        year: undefined,
-        description: "/artwork/thumbnail/michael.webp",
+        year: 2025,
+        description: "Drawing of archangel Michael",
         slug: "michael",
+        featuredRank: 2,
+    },
+
+    {
+        title: "Mirror",
+        year: 2026,
+        description: "Abstract pencil drawing of woman",
+        slug: "mirror",
+        featuredRank: 3,
+    },
+
+    {
+        title: "November 2023",
+        year: 2023,
+        description: "Coloured drawing of flower",
+        slug: "november-2023",
+    },
+
+    {
+        title: "Peace in Chaos",
+        year: 2025,
+        description: "Pencil sketch of woman with eyes closed",
+        slug: "peace-in-chaos",
+    },
+
+    {
+        title: "Peggy's Tattoo",
+        year: 2022,
+        description: "Coloured drawing of flower for tattoo idea",
+        slug: "peggys-tattoo",
+    },
+
+    {
+        title: "Pretentious",
+        year: 2025,
+        description: "Pencil sketch of an elder lady with a pretentious look on her face",
+        slug: "pretentious",
+    },
+
+    {
+        title: "The Long View",
+        year: 2024,
+        description: "Pencil sketch of an elder man with wisdom in his eyes",
+        slug: "the-long-view",
+    },
+
+    {
+        title: "Vulnerable",
+        year: 2025,
+        description: "Pencil sketch of the back of a woman with a sheet wrapped around her",
+        slug: "vulnerable",
     },
 ]
 

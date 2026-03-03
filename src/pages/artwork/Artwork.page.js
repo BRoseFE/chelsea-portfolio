@@ -3,10 +3,10 @@
 import styles from "./Artwork.page.module.css"
 import { useParams } from "react-router-dom";
 import { artworks } from "data/artworks";
+import { getFullPath } from "utils/imagePaths";
 
 function ArtworkPage() {
     const { slug } = useParams();
-
     const artwork = artworks.find(art => art.slug === slug)
 
     if (!artwork) {
@@ -14,11 +14,15 @@ function ArtworkPage() {
     }
 
     return(
-        <main className={styles.ArtworkPage}>
+        <main className={styles.artworkPage}>
+            <img
+                src={getFullPath(artwork.slug)}
+                alt={`${artwork.title} (${artwork.year})`}
+                className={styles.artworkPageImage}
+            />
             <h2>{artwork.title}</h2>
-            <img src={artwork.imgSrc} alt={artwork.imgAlt} />
             <p>{artwork.year}</p>
-            <p>{artwork.medium}</p>
+            <p>{artwork.description}</p>
         </main>
     );
 }

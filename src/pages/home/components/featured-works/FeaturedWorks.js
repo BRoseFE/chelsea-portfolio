@@ -1,5 +1,4 @@
 import { artworks } from "data/artworks";
-import { featuredIds } from "data/featured";
 import styles from "./FeaturedWorks.module.css"
 import ArtworkCard from "shared/components/artwork-card/ArtworkCard";
 
@@ -8,10 +7,9 @@ function FeaturedWorks() {
         return <p>No artwork added yet</p>
     }
 
-    const byId = new Map(artworks.map((art) => [art.id, art]));
-
-    const featuredWorks = featuredIds
-        .map((id) => byId.get(id))
+    const featuredWorks = artworks
+        .filter((a) => typeof a.featuredRank === "number")
+        .sort((a, b) => a.featuredRank - b.featuredRank)
         .filter(Boolean) //ignores bad/missing ids instead of crashing
         .slice(0, 6);
 
@@ -20,13 +18,11 @@ function FeaturedWorks() {
     }    
 
     return (
-        <ul className={styles.FeaturedWorksGrid}>
-            {featuredWorks.map(artwork => (
-                <li key={artwork.id}>
-                    <ArtworkCard {...artwork} variant="detailed"/>
-                </li>
+        <section className={styles.featuredWorks}>
+            {featuredWorks.map((artwork) => (
+                <ArtworkCard key={artwork.slug} artwork={artwork} />
             ))}
-        </ul>
+        </section>
     );
 }
 

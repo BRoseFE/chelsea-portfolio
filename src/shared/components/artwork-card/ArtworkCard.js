@@ -1,38 +1,22 @@
 import styles from "./ArtworkCard.module.css"
 import { Link } from "react-router-dom"
+import { getThumbPath } from "utils/imagePaths";
 
-function ArtworkCard({
-    title,
-    year,
-    medium,
-    imgSrc,
-    imgAlt = "Artwork",
-    slug,
-    variant = "detailed" // "detailed" will be for Featured, "thumbnail" will be for PortfolioPage grid
-}) {
-    if (!slug || !imgSrc) return null;
+function ArtworkCard({ artwork }) {
+    const { slug, title, year } = artwork;
+
+    if (!slug || !title) return null;
 
     return(
-        <article className={styles.ArtworkCard}>
-            <Link to={`/artwork/${slug}`} className={styles.ArtworkCardLink}>
-                <img src={imgSrc} alt={imgAlt} />
-
-                {variant === "detailed" && (
-                    <>
-                        {title && (
-                            <header className={styles.ArtworkCardHeader}>
-                                <h3 className={styles.ArtworkCardTitle}>{title}</h3>
-                            </header>
-                        )}
-
-                        <div className={styles.ArtworkCardMeta}>
-                            {year && <p>{year}</p>}
-                            {medium && <p>{medium}</p>}
-                        </div>
-                    </>
-                )}
-            </Link>
-        </article>
+        <Link to={`/artwork/${slug}`} className={styles.artworkCardLink}>
+            <img    
+                src={getThumbPath(slug)}
+                alt={`${title} (${year})`}
+                loading="lazy"
+                decoding="async"
+                className={styles.artworkCardImage}
+            />
+        </Link>
     );
 }
 
