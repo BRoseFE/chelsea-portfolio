@@ -1,9 +1,13 @@
 :root {
   --max: 1100px;
   --pad: 1rem;
-  --border: #eaeaea;
-  /* --font-heading: "Markazi Text", serif;
-  --font-body: "Karla", sans-serif; */
+  --font-heading: "Shadows Into Light", cursive;
+  --font-body: "Playpen Sans Deva", sans-serif;
+  --color-soft-white: #F8F9FF;
+  --color-text: #F4EEFF;
+  --color-link: #DCD6F7;
+  --color-bg-light: #A6B1E1;
+  --color-bg-dark: #424874;
 }
 
 *,
@@ -12,22 +16,20 @@
     box-sizing: border-box;
 }
 
-h1, h2, h3, h4 {
-  font-family: var(--font-heading);
-  font-weight: 500;
+html {
+  font-size: 16px;
 }
 
 html, body {
   overflow-x: hidden;
 }
 
+h1, h2, h3 {
+  font-family: var(--font-heading);
+}
+
 body {
     margin: 0;
     font-family: var(--font-body);
-    font-weight: 400;
     line-height: 1.5;
-}
-
-a {
-    color: inherit;
 }

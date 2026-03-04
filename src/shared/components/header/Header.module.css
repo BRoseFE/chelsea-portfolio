@@ -1,5 +1,16 @@
 .header {
     width: 100%;
+    background:
+        linear-gradient(
+            270deg,
+            var(--color-bg-dark),
+            var(--color-bg-light)
+        ),
+        url("assets/textures/paper-light.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode:lighten;
 }
 
 .headerInner {
@@ -7,15 +18,17 @@
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
-    padding: 1rem 1.25rem;
+    padding: 0 1.25rem;
 }
 
 .headerTitle {
     grid-column: 1;
     margin: 0;
     justify-self: center;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;   
+    font-family: var(--font-heading);
+    letter-spacing: 0.2rem;
+    font-size: 2rem;
+    color: var(--color-soft-white);
 }
 
 .headerTitleLink {
@@ -36,8 +49,10 @@
     margin: 0;
 }
 
-/* .headerNavListLink {
+.headerNavListLink {
     text-decoration: none;
+    color: var(--color-soft-white);
+    font-size: 1.3rem;
     padding: 0.5rem 0.75rem;
     border-radius: 10px;
     display: inline-block;
@@ -46,4 +61,4 @@
 .activeLink {
     font-weight: 600;
     text-decoration: underline;
-} */
+}
