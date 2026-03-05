@@ -3,14 +3,10 @@ import styles from "./FeaturedWorks.module.css"
 import ArtworkCard from "shared/components/artwork-card/ArtworkCard";
 
 function FeaturedWorks() {
-    if (!artworks.length) {
-        return <p>No artwork added yet</p>
-    }
-
+    
     const featuredWorks = artworks
-        .filter((a) => typeof a.featuredRank === "number")
+        .filter((a) => a?.slug && typeof a.featuredRank === "number")
         .sort((a, b) => a.featuredRank - b.featuredRank)
-        .filter(Boolean) //ignores bad/missing ids instead of crashing
         .slice(0, 6);
 
     if(!featuredWorks.length) {
@@ -18,10 +14,13 @@ function FeaturedWorks() {
     }    
 
     return (
-        <section className={styles.featuredWorks}>
-            {featuredWorks.map((artwork) => (
+        <section className={styles.featuredWorks} aria-labelledby="featured-works-title">
+            <h2 id="featured-works-title" className={styles.featuredTitle}>Featured Works</h2>
+            <div className={styles.featuredGrid}>
+                {featuredWorks.map((artwork) => (
                 <ArtworkCard key={artwork.slug} artwork={artwork} />
             ))}
+            </div>
         </section>
     );
 }
