@@ -1,0 +1,27 @@
+.artworkCard {
+    width: 100%;
+    aspect-ratio: 3/4;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+
+.artworkCard:hover .artworkCardImage {
+    transform: scale(1.05);
+}
+
+.artworkCardImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.artworkCardLink {
+    display: block;
+    width: 100%;
+    height: 100%;
+}

@@ -8,15 +8,17 @@ function ArtworkCard({ artwork }) {
     if (!slug || !title) return null;
 
     return(
-        <Link to={`/artwork/${slug}`} className={styles.artworkCardLink}>
-            <img    
-                src={getThumbPath(slug)}
-                alt={`${title} (${year})`}
-                loading="lazy"
-                decoding="async"
-                className={styles.artworkCardImage}
-            />
-        </Link>
+        <div className={styles.artworkCard}>
+            <Link to={`/artwork/${slug}`} className={styles.artworkCardLink}>
+                <img    
+                    src={getThumbPath(slug)}
+                    alt={`${title} (${year})`}
+                    loading="lazy"
+                    decoding="async"
+                    className={styles.artworkCardImage}
+                />
+            </Link>
+        </div>
     );
 }
 
