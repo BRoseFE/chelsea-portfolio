@@ -1,17 +1,18 @@
 .header {
     width: 100%;
     background:
-        linear-gradient(
-            270deg,
+        radial-gradient(
+            circle at center,
+            #888fff,
             var(--color-bg-dark),
-            var(--color-bg-light)
+            #888fff
         ),
         url("assets/textures/paper-light.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-blend-mode:lighten;
-    padding: 2rem 0;
+    background-blend-mode:overlay;
+    padding: 1rem 0;
 }
 
 .headerInner {
@@ -29,7 +30,7 @@
     font-family: var(--font-heading);
     letter-spacing: 0.2rem;
     font-size: 2rem;
-    color: var(--color-soft-white);
+    color: #000;
 }
 
 .headerTitleLink {
@@ -52,7 +53,7 @@
 
 .headerNavListLink {
     text-decoration: none;
-    color: var(--color-soft-white);
+    color: #333;
     font-size: 1.3rem;
     padding: 0.5rem 0.75rem;
     border-radius: 10px;

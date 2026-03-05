@@ -37,6 +37,7 @@ export const artworks = [
         year: 2025,
         description: "Girl with flower on head drawing",
         slug: "blissfulness",
+        featuredRank: 4
     },
 
      {
@@ -58,7 +59,7 @@ export const artworks = [
         year: 2025,
         description: "Blue eye drawn with abstract styling lines",
         slug: "eye-into-the-soul",
-        featuredRank: 1,
+        featuredRank: 2,
     },
 
     {
@@ -122,7 +123,7 @@ export const artworks = [
         year: 2025,
         description: "Drawing of archangel Michael",
         slug: "michael",
-        featuredRank: 2,
+        featuredRank: 1,
     },
 
     {
@@ -145,6 +146,7 @@ export const artworks = [
         year: 2025,
         description: "Pencil sketch of woman with eyes closed",
         slug: "peace-in-chaos",
+        featuredRank: 5,
     },
 
     {
@@ -166,6 +168,7 @@ export const artworks = [
         year: 2024,
         description: "Pencil sketch of an elder man with wisdom in his eyes",
         slug: "the-long-view",
+        featuredRank: 6,
     },
 
     {

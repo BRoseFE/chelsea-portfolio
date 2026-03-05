@@ -3,7 +3,7 @@ import styles from "./FeaturedWorks.module.css"
 import ArtworkCard from "shared/components/artwork-card/ArtworkCard";
 
 function FeaturedWorks() {
-    
+
     const featuredWorks = artworks
         .filter((a) => a?.slug && typeof a.featuredRank === "number")
         .sort((a, b) => a.featuredRank - b.featuredRank)
@@ -11,7 +11,7 @@ function FeaturedWorks() {
 
     if(!featuredWorks.length) {
         return <p>No featured artwork selected yet</p>
-    }    
+    }
 
     return (
         <section className={styles.featuredWorks} aria-labelledby="featured-works-title">

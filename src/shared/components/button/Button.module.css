@@ -1,8 +1,8 @@
 .button {
-    border-radius: 32px;
-    background-color: #551155;
-    color: #333333;
-    font-size: 1.2rem;
+    border-radius: 1rem;
+    background-color: var(--color-bg-dark);
+    color: var(--color-link);
+    font-size: 1rem;
     font-weight: 700;
     padding: 0.6rem 1.1rem;
     border: none;
@@ -15,7 +15,7 @@
 }
 
 .button:focus-visible {
-    outline: 2px solid #495E57;
+    outline: 2px solid #495E57  ;
     outline-offset: 3px;
 }
 
@@ -26,6 +26,6 @@
 
 .button:hover,
 .button:focus-visible {
-    background-color: #333333;
-    color: #EDEFEE;
+    background-color: var(--color-bg-light);
+    color: var(--color-text-dark);
 }
