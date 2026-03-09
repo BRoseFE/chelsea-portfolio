@@ -1,0 +1,44 @@
+.portfolioPage {
+    padding: 2rem;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.portfolioTitle {
+    margin: 2rem 0 1.25rem;
+    font-size: clamp(2rem, 5vw, 3rem);
+    text-align: center;
+    color: var(--color-text);
+}
+
+.portfolioGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.portfolioPiece {
+    margin: 0;
+}
+
+
+/*-- Responsive --*/
+
+@media (max-width: 900px) {
+    .portfolioGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 520px) {
+    .portfolioGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolioPage {
+        padding: 1rem;
+    }
+}

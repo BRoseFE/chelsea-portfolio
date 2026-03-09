@@ -25,3 +25,8 @@
     width: 100%;
     height: 100%;
 }
+
+.artworkCard:focus-within {
+    outline: 3px solid #ffffff;
+    outline-offset: 4px;
+}

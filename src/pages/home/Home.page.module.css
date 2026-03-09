@@ -1,9 +1,0 @@
-.home {
-    background:
-        radial-gradient(
-            circle at center,
-            var(--color-bg-dark),
-            var(--color-bg-light),
-            #23263F
-        )
-}
