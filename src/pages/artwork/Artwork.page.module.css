@@ -1,0 +1,80 @@
+.artworkPage {
+    min-height: 100vh;
+    padding: 3rem 1.5rem 4rem;
+}
+
+.artworkPageInner {
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.backLink {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    color: var(--color-link);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.backLink:hover {
+    text-decoration: underline;
+}
+
+.artworkCard {
+    background: var(--color-bg-light);
+    border-radius: 1.5rem;
+    padding: 1.25rem;
+    box-shadow: 0 10px 30px var(--color-link);
+}
+
+.imageWrap {
+    background: var(--color-bg-dark);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.artworkPageImage {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.artworkMeta {
+    padding: 1.5rem 0.25rem 0.5rem;
+    color: var(--color-text);
+    max-width: 65ch;
+}
+
+.artworkMetaTitle {
+    margin: 0;
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.1;
+}
+
+.artworkMetaYear {
+    margin: 0.7rem 0 1rem;
+    font-size: 1rem;
+    opacity: 0.6;
+}
+
+.artworkMetaDescription {
+    margin: 0;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.artworkMetaSignature {
+    text-align: end;
+    color: var(--color-text);
+}
+
+@media (max-width: 900px) {
+    .artworkCard {
+        padding: 2rem;
+    }
+
+    .artworkMeta {
+        padding-top: 2rem;
+    }
+}
