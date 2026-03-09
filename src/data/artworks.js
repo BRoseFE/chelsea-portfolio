@@ -146,7 +146,6 @@ export const artworks = [
         year: 2025,
         description: "Pencil sketch of woman with eyes closed",
         slug: "peace-in-chaos",
-        featuredRank: 5,
     },
 
     {
@@ -161,6 +160,7 @@ export const artworks = [
         year: 2025,
         description: "Pencil sketch of an elder lady with a pretentious look on her face",
         slug: "pretentious",
+        featuredRank: 5,
     },
 
     {
