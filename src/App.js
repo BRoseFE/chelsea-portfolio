@@ -4,6 +4,7 @@ import HomePage from "pages/home/Home.page";
 import PortfolioPage from "pages/portfolio/Portfolio.page";
 import ArtworkPage from "pages/artwork/Artwork.page";
 import { Routes, Route } from "react-router-dom";
+import AboutPage from "pages/about/About.page";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={ <HomePage /> } />
         <Route path="/portfolio" element={ <PortfolioPage /> } />
+        <Route path="/about" element={ <AboutPage /> } />
         <Route path="/artwork/:slug" element={ <ArtworkPage /> }/>
       </Routes>
       <Footer />

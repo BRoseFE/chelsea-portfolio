@@ -19,11 +19,6 @@
     outline-offset: 3px;
 }
 
-.button:disabled {
-    opacity: 0.7;
-    cursor: not-allowed;
-}
-
 .button:hover,
 .button:focus-visible {
     background-color: var(--color-bg-light);

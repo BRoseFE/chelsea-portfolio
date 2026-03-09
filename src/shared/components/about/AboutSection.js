@@ -1,31 +1,36 @@
-import styles from "./About.module.css"
+import styles from "./AboutSection.module.css"
 import Button from "shared/components/button/Button"
 import chelsea from "assets/images/chelsea-placeholder.jpg"
 
-function About() {
+function AboutSection({
+        intro = "Hi, I'm Chelsea",
+        description="I enjoy drawing.",
+        img=chelsea,
+        title 
+    }) {
     return(
-        <section className={styles.about} aria-labelledby="about-title">
+        <section className={styles.about}>
             <div className={styles.aboutInner}>
                 <header className={styles.aboutHeader}>
-                    <h2 id="about-title" className={styles.aboutHeaderTitle}>About Me</h2>
+                    <h2 className={styles.aboutHeaderTitle}>{title}</h2>
                 </header>
 
                 <div className={styles.aboutContent}>
                     <div className={styles.aboutImageContainer}>
                         <img
                             className={styles.aboutImage}
-                            src={chelsea}
+                            src={img}
                             alt="Chelsea Rose"
                             loading="lazy"
                         />
                     </div>
 
                     <div className={styles.aboutText}>
-                        <h3 className={styles.aboutIntro}>Hi, I'm Chelsea</h3>
-                        <p className={styles.aboutContentText}>I enjoy drawing.</p>
+                        <h3 className={styles.aboutIntro}>{intro}</h3>
+                        <p className={styles.aboutContentText}>{description}</p>
 
                         <div className={styles.aboutActions}>
-                            <Button text="Contact Me" disabled/>
+                            <Button text="Contact Me" />
                         </div>
                     </div>
                 </div>
@@ -34,4 +39,4 @@ function About() {
     );
 }
 
-export default About;
+export default AboutSection;
