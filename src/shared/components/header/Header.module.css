@@ -64,3 +64,20 @@
     font-weight: 600;
     text-decoration: underline;
 }
+
+@media (max-width: 520px) {
+    .headerInner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .headerTitle {
+        text-align: center;
+    }
+
+    .headerNavList {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
