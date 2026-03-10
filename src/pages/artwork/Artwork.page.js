@@ -17,11 +17,11 @@ function ArtworkPage() {
 
                 <nav className={styles.artworkPageNav}>
                     <Link to="/" className={styles.artworkPageNavLink}>
-                        ← Home
+                        Home
                     </Link>
 
                     <Link to="/portfolio" className={styles.artworkPageNavLink}>
-                        ← Back to portfolio
+                        Back to portfolio
                     </Link>
                 </nav>
 

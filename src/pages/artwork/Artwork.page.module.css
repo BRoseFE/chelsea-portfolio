@@ -10,9 +10,10 @@
 
 .artworkPageNav {
     display: flex;
-    gap: 1rem;
-    align-items: center;
-    margin-bottom: 1.5rem;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+    margin: 0 0 1.5rem 2.5rem;
     flex-wrap: wrap;
 }
 
@@ -101,6 +102,8 @@
     color: var(--color-text);
 }
 
+/*-- Responsive --*/
+
 @media (max-width: 900px) {
     .artworkCard {
         padding: 2rem;
@@ -108,5 +111,13 @@
 
     .artworkMeta {
         padding-top: 2rem;
+    }
+}
+
+@media (max-width: 520px) {
+    .artworkPageNav {
+        align-items: center;
+        margin: 0;
+        gap: 1rem;
     }
 }

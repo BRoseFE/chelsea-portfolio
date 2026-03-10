@@ -1,6 +1,6 @@
 import styles from "./AboutSection.module.css"
 import Button from "shared/components/button/Button"
-import chelsea from "assets/images/chelsea2.webp"
+import chelsea from "assets/images/chelsea.webp"
 
 function AboutSection({
     intro = "Hi, I'm Chelsea",
