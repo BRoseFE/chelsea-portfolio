@@ -8,9 +8,9 @@ function ArtworkCard({ artwork }) {
     if (!slug || !title) return null;
 
     return(
-        <div className={styles.artworkCard}>
+        <article className={styles.artworkCard}>
             <Link to={`/artwork/${slug}`} className={styles.artworkCardLink}>
-                <img    
+                <img
                     src={getThumbPath(slug)}
                     alt={`${title} (${year})`}
                     loading="lazy"
@@ -18,8 +18,8 @@ function ArtworkCard({ artwork }) {
                     className={styles.artworkCardImage}
                 />
             </Link>
-        </div>
+        </article>
     );
 }
 
-export default ArtworkCard; 
+export default ArtworkCard;

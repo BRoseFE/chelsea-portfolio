@@ -15,6 +15,14 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.featuredItem {
+    margin: 0;
+    padding: 0;
 }
 
 /* -- Responsive -- */

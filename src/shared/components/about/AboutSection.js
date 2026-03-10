@@ -3,30 +3,41 @@ import Button from "shared/components/button/Button"
 import chelsea from "assets/images/chelsea2.webp"
 
 function AboutSection({
-        intro = "Hi, I'm Chelsea",
-        description="I enjoy drawing.",
-        img=chelsea,
-        title
-    }) {
+    intro = "Hi, I'm Chelsea",
+    description="I enjoy drawing.",
+    img=chelsea,
+    title
+}) {
+
+    const titleId = title ? "about-section-title" : undefined;
+
     return(
-        <section className={styles.about}>
+        <section
+            className={styles.about}
+            aria-labelledby={titleId}
+        >
             <div className={styles.aboutInner}>
-                <header className={styles.aboutHeader}>
-                    <h2 className={styles.aboutHeaderTitle}>{title}</h2>
-                </header>
+
+                {title && (
+                    <header className={styles.aboutHeader}>
+                        <h2 id={titleId} className={styles.aboutHeaderTitle}>
+                            {title}
+                        </h2>
+                    </header>
+                )}
 
                 <div className={styles.aboutContent}>
-                    <div className={styles.aboutImageContainer}>
+                    <figure className={styles.aboutImageContainer}>
                         <img
                             className={styles.aboutImage}
                             src={img}
                             alt="Chelsea Rose"
                             loading="lazy"
                         />
-                    </div>
+                    </figure>
 
                     <div className={styles.aboutText}>
-                        <h3 className={styles.aboutIntro}>{intro}</h3>
+                        <p className={styles.aboutIntro}>{intro}</p>
                         <p className={styles.aboutContentText}>{description}</p>
 
                         <div className={styles.aboutActions}>

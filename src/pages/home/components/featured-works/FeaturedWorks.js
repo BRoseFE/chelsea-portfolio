@@ -16,11 +16,13 @@ function FeaturedWorks() {
     return (
         <section className={styles.featuredWorks} aria-labelledby="featured-works-title">
             <h2 id="featured-works-title" className={styles.featuredTitle}>Featured Works</h2>
-            <div className={styles.featuredGrid}>
+            <ul className={styles.featuredGrid}>
                 {featuredWorks.map((artwork) => (
-                <ArtworkCard key={artwork.slug} artwork={artwork} />
-            ))}
-            </div>
+                    <li key={artwork.slug} className={styles.featuredItem}>
+                        <ArtworkCard artwork={artwork} />
+                    </li>
+                ))}
+            </ul>
         </section>
     );
 }

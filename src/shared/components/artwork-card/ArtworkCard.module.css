@@ -8,6 +8,11 @@
     box-shadow: 0 5px 8px var(--color-bg-dark);
 }
 
+.artworkCard:focus-within {
+    outline: 3px solid #ffffff;
+    outline-offset: 4px;
+}
+
 .artworkCard:hover .artworkCardImage {
     transform: scale(1.05);
 }
@@ -26,7 +31,3 @@
     height: 100%;
 }
 
-.artworkCard:focus-within {
-    outline: 3px solid #ffffff;
-    outline-offset: 4px;
-}

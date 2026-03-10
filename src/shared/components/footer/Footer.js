@@ -4,14 +4,9 @@ function Footer() {
     return (
         <footer className={styles.footer}>
             <div className={styles.footerInner}>
-                <div className={styles.footerCopyright}>
-                    <p>
-                        © {new Date().getFullYear()} Chelsea Rose - Drawings
-                    </p>
-                    <p>
-                        © Branson Rose - Website design and development
-                    </p>
-                </div>
+                <small className={styles.footerCopyright}>
+                    © {new Date().getFullYear()} Chelsea Rose - Drawings • Website by Branson Rose
+                </small>
             </div>
         </footer>
     );

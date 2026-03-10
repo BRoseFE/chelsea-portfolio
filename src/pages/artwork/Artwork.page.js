@@ -12,13 +12,20 @@ function ArtworkPage() {
     }
 
     return(
-        <main className={styles.artworkPage}>
+        <article className={styles.artworkPage}>
             <div className={styles.artworkPageInner}>
-                <Link to="/portfolio" className={styles.backLink}>
-                    ← Back to gallery
-                </Link>
-                
-                <section className={styles.artworkCard}>
+
+                <nav className={styles.artworkPageNav}>
+                    <Link to="/" className={styles.artworkPageNavLink}>
+                        ← Home
+                    </Link>
+
+                    <Link to="/portfolio" className={styles.artworkPageNavLink}>
+                        ← Back to portfolio
+                    </Link>
+                </nav>
+
+                <figure className={styles.artworkCard}>
                     <div className={styles.imageWrap}>
                         <img
                             src={getFullPath(artwork.slug)}
@@ -26,16 +33,18 @@ function ArtworkPage() {
                             className={styles.artworkPageImage}
                         />
                     </div>
+                    <figcaption className={styles.artworkMetaSignature}>
+                        © Chelsea Rose
+                    </figcaption>
 
-                    <p className={styles.artworkMetaSignature}>© Chelsea Rose</p>
-                    <div className={styles.artworkMeta}>
+                    <section className={styles.artworkMeta}>
                         <h2 className={styles.artworkMetaTitle}>{artwork.title}</h2>
                         <p className={styles.artworkMetaYear}>{artwork.year}</p>
                         <p className={styles.artworkMetaDescription}>{artwork.description}</p>
-                    </div>
-                </section>
+                    </section>
+                </figure>
             </div>
-        </main>
+        </article>
     );
 }
 

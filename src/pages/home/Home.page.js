@@ -4,10 +4,10 @@ import styles from "./Home.page.module.css"
 
 function HomePage() {
     return(
-        <main className={styles.home}>
+        <div className={styles.home}>
             <FeaturedWorks />
             <About title="About Me"/>
-        </main>
+        </div>
     );
 }
 

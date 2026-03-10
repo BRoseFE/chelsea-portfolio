@@ -4,16 +4,19 @@ import ArtworkCard from "shared/components/artwork-card/ArtworkCard";
 
 function PortfolioPage() {
     return(
-        <main className={styles.portfolioPage}>
-            <h2 className={styles.portfolioTitle}>Portfolio</h2>
+        <section className={styles.portfolioPage}>
+            <header>
+                <h1 className={styles.portfolioTitle}>Portfolio</h1>
+            </header>
+
             <ul className={styles.portfolioGrid}>
-                {artworks.map(artwork => ( 
+                {artworks.map(artwork => (
                     <li key={artwork.slug} className={styles.portfolioPiece}>
                         <ArtworkCard artwork={artwork} />
                     </li>
                 ))}
             </ul>
-        </main>
+        </section>
     );
 }
 

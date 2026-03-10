@@ -1,10 +1,10 @@
 :root {
   --max-width: 1200px;
-  
+
   /* Fonts */
   --font-heading: "Shadows Into Light", cursive;
   --font-body: "Playpen Sans Deva", sans-serif;
-  
+
   /* Colours */
   --color-soft-white: #F8F9FF;
   --color-text: #F4EEFF;

@@ -13,7 +13,7 @@ function Header() {
                         <NavLink className={styles.headerTitleLink} to="/" end>Chelsea's Drawings</NavLink>
                     </p>
                 </div>
-            
+
                 <nav className={styles.headerNav}>
                     <ul className={styles.headerNavList}>
                         <li>
