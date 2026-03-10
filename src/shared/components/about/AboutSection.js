@@ -1,12 +1,12 @@
 import styles from "./AboutSection.module.css"
 import Button from "shared/components/button/Button"
-import chelsea from "assets/images/chelsea-placeholder.jpg"
+import chelsea from "assets/images/chelsea.jpg"
 
 function AboutSection({
         intro = "Hi, I'm Chelsea",
         description="I enjoy drawing.",
         img=chelsea,
-        title 
+        title
     }) {
     return(
         <section className={styles.about}>
