@@ -38,7 +38,9 @@ function AboutSection({
 
                     <div className={styles.aboutText}>
                         <p className={styles.aboutIntro}>{intro}</p>
-                        <p className={styles.aboutContentText}>{description}</p>
+                        <div className={styles.aboutContentText}>
+                            {description}
+                        </div>
 
                         <div className={styles.aboutActions}>
                             <Button text="Contact Me" />
