@@ -31,13 +31,18 @@ export const artworks = [
         slug: "better-november",
     },
 
+    {
+        title: "Between Thought and Distance",
+        year: 2026,
+        description: "Pencil drawing of a lady looking away from the view point, wrapped in a sheet",
+        slug: "between-thought-and-distance",
+    },
 
     {
         title: "Blissfulness",
         year: 2025,
         description: "Girl with flower on head drawing",
         slug: "blissfulness",
-        featuredRank: 4
     },
 
      {
@@ -105,6 +110,13 @@ export const artworks = [
     },
 
     {
+        title: "Kristen's Tattoo",
+        year: 2026,
+        description: "Drawing of a tattoo for a friend, of flowers wrapping around the page",
+        slug: "kristens-tattoo",
+    },
+
+    {
         title: "Lily",
         year: 2021,
         description: "White lily drawing",
@@ -160,7 +172,7 @@ export const artworks = [
         year: 2025,
         description: "Pencil sketch of an elder lady with a pretentious look on her face",
         slug: "pretentious",
-        featuredRank: 5,
+        featuredRank: 4,
     },
 
     {
@@ -172,10 +184,19 @@ export const artworks = [
     },
 
     {
+        title: "Timid",
+        year: 2026,
+        description: "Drawing of a timid woman, posing for the artist, hand on her heart, looking down",
+        slug: "timid",
+        featuredRank: 5
+    },
+
+    {
         title: "Vulnerable",
         year: 2025,
         description: "Pencil sketch of the back of a woman with a sheet wrapped around her",
         slug: "vulnerable",
     },
+
 ]
 
