@@ -5,7 +5,7 @@ This project focuses on clean component architecture, accessible semantic HTML, 
 
 ---
 
-## 🌐 Live Demo
+## 🌐 Live Website
 
 [chelsearose.art](https://chelsearose.art)
 
