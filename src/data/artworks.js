@@ -186,7 +186,7 @@ export const artworks = [
     {
         title: "Timid",
         year: 2026,
-        description: "Drawing of a timid woman, posing for the artist, hand on her heart, looking down",
+        description: "Drawing of a silhouetted woman's face",
         slug: "timid",
         featuredRank: 5
     },
