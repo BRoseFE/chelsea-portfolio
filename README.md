@@ -84,7 +84,7 @@ Utility helpers generate the paths automatically so components remain clean and 
   Landmarks such as `header`, `nav`, `main`, `section`, `article`, and `figure` are used intentionally to improve accessibility and document structure.
 
 * **Deployment configuration**
-  A Netlify `_redirects` file ensures client-side routing works correctly when refreshing pages or accessing routes directly.
+  A Vercel `.json` file ensures client-side routing works correctly when refreshing pages or accessing routes directly.
 
 * **Testing**
   Basic testing files are included via Create React App setup. The primary focus of this project is component structure, routing behaviour, and accessibility.
@@ -97,7 +97,7 @@ Utility helpers generate the paths automatically so components remain clean and 
 * **React Router**
 * **CSS Modules**
 * **JavaScript (ES6+)**
-* **Netlify (Deployment)**
+* **Vercel (Deployment)**
 
 No UI frameworks or component libraries were used — layout and styling are fully custom.
 
@@ -156,6 +156,8 @@ Potential future enhancements could include:
 * Admin interface for managing artwork entries
 * Image lazy loading improvements
 * Expanded artwork metadata and tagging
+* Back-end database for storing images
+* Authentication for uploading images
 
 ---
 
